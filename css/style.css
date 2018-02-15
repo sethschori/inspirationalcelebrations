@@ -1,0 +1,321 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body,
+.tagline {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.6;
+	color: #111;
+	background-color: #FCF7F2;
+}
+
+p {
+	font-size: 1.1em;
+	margin-bottom: 1.25em;
+}
+
+h1 {
+	margin: 0;
+	font-size: 4em;
+}
+
+h2,
+a,
+blockquote:before,
+blockquote:after {
+	color: rgb(119, 92, 158); // rgb(169, 189, 155); // #444;
+}
+
+h2 {
+	text-align: center;
+	margin: 0;
+	padding-top: .5em;
+	font-size: 3em;
+}
+
+h1,
+h2 {
+	font-family: 'Tangerine', cursive, 'Roboto', sans-serif;
+	font-weight: 400;
+	line-height: 1.1;
+}
+
+a {
+	text-decoration: none;
+}
+
+strong {
+	font-weight: normal;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+#preface,
+.main-wrapper {
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+#preface {
+	padding: 3em 0;
+	text-align: center;
+	border-bottom: none;
+}
+
+#preface .text-container {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.text-container {
+	padding: 0 1em;
+}
+
+.image-container {
+	text-align: center;
+	padding: 10px 0 0 0;
+}
+
+.main-footer {
+	padding: 1.3em 0;
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+section {
+	padding-top: 2.5em;
+	padding-bottom: 2em;
+	border-bottom: 4px double #ccc;
+	padding-bottom: 2em;
+}
+
+.image-wrapper {
+	margin: 0 auto;
+	position: relative;
+	max-width: 900px;
+}
+
+.title {
+	position: absolute;
+	font-size: 3em;
+	width: 100%;
+	bottom: 10%;
+	padding: 0.08em 0;
+	text-align: center;
+	color: #FCF7F2;
+	text-shadow: 2px 2px 5px rgb(1,1,1);
+	background: #888;
+	background: rgba(0,0,0,.5);
+	background:
+		linear-gradient(
+			to right,
+			rgba(255,255,255,.01),
+			rgba(255,255,255,.1) 20%,
+			rgba(255,255,255,.2) 40%,
+			rgba(255,255,255,.2) 60%,
+			rgba(255,255,255,.1) 80%,
+			rgba(255,255,255,.01) 100%
+		);
+}
+
+.name {
+	font-size: 4em;
+}
+
+.tagline {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#testimonials .testimonial {
+	display: block;
+	margin: 0;
+	padding-left: 1em;
+	font-size: 1.25em;
+	height: 100px;
+}
+
+#testimonials blockquote {
+	height: auto;
+	text-align: center;
+}
+
+blockquote:before {
+	content: "\201C" ;
+	font-size: 2.5em;
+	display: inline-block;
+	vertical-align: text-bottom;
+	line-height: .2em;
+}
+
+blockquote:after {
+	content: "\201D" ;
+	font-size: 2.5em;
+	display: inline-block;
+	vertical-align: text-bottom;
+	line-height: .2em;
+}
+
+.source {
+	display: block;
+	font-style: italic;
+	color: #888;
+	font-size: 1em;
+	text-align: center;
+	margin: 1em 2em 4em 0em;
+}
+
+.source:before {
+	content: "\2014";
+	padding-right: 0.25em
+}
+
+.circles-wrapper{
+	text-align: center;
+}
+
+.circle-filled {
+	display: inline-block;
+	width: .75em;
+	height: .75em;
+	background-color: #777;
+	border: 1px solid #777;
+	border-radius: 50%;
+	margin-right: 1em;
+}
+
+.circle-empty {
+	display: inline-block;
+	width: .75em;
+	height: .75em;
+	border: 1px solid #777;
+	border-radius: 50%;
+	margin-right: 1em;
+}
+
+#contact .text-container {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 420px) {
+
+	.title {
+		font-size: 4em;
+	}
+
+	h2 {
+		padding-top: 1em;
+	}
+
+}
+
+@media (min-width: 800px) {
+
+	.padding-wrapper {
+		margin-right: 1em;
+		margin-left: 1em;
+	}
+
+	.columns {
+		padding: 4em 0;
+		display: block;
+	}
+
+	.columns .image-container {
+		width: 49%;
+		vertical-align: middle;
+		display: inline-block;
+		margin: 0; // 0 1em 0 0;
+		padding: 0 1em 0 0;
+	}
+
+	.columns .text-container {
+		width: 50%;
+		vertical-align: middle;
+		display: inline-block;
+		margin: 0;
+		padding: 0 0 0 1em;
+	}
+
+	#testimonials {
+		padding-bottom: 4em;
+	}
+
+	#testimonials .testimonial {
+		height: auto;
+	}
+
+	#testimonials h2 {
+		padding-bottom: 1em;
+	}
+
+	#testimonials blockquote {
+		height: 2.5em;
+	}
+
+	.source {
+		margin-top: 0;
+		font-size: 1em;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 900px) and (min-height: 500px) {  
+
+	.cover-image {
+		display: none;
+	}
+
+	.image-wrapper {
+		height: 100vh;
+		min-width: 100%;
+	}
+
+	.title {
+		width: 100%;
+		font-size: 5em;
+	}
+
+	.main-header {
+		background: url('../img/cover-large.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right;
+		height: 100vh;
+		width: 100%;
+	}
+
+}
