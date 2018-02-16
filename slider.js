@@ -37,7 +37,7 @@ function changeText() {
 
 window.onload = function() {
 	changeText();
-	document.getElementById("email-address").innerHTML = '<a href="mailto:marge@inspirationalcelebrations.com">marge@inspirationalcelebrations.com</a>';
+	document.getElementById("email-address").innerHTML = '<a href="mailto:margeinspirationalcelebrations@gmail.com">margeinspirationalcelebrations@gmail.com</a>';
 }
 
 window.setInterval(changeText, 4000);
